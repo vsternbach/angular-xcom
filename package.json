@@ -1,0 +1,28 @@
+{
+  "name": "ngIntercom",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Angularjs PubSub with support for cross iframes communication",
+  "repository": "https://github.com/logzio/logzio-intercom.git",
+  "license": "MIT",
+  "main": "dist/ngIntercom.js",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "awesome-typescript-loader": "^0.17.0",
+    "copyfiles": "^0.2.1",
+    "rimraf": "^2.5.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "prestart": "npm install",
+    "start": "webpack-dev-server --hot",
+    "typings": "typings",
+    "build": "rimraf dist & webpack"
+  }
+}
